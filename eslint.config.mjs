@@ -12,7 +12,7 @@ export default [
       "prefer-const": "error"
   }
   },
-  {ignores: ["node_modules/**/*.{js,mjs,ts,jsx,tsx}"]},
+  {ignores: ["node_modules", "dist"]},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
