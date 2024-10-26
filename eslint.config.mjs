@@ -5,7 +5,7 @@ import pluginReact from "eslint-plugin-react";
 
 
 // configs override each other by order, from top to the bottom of the array
-// Configs (incl. extended from pluggings) may be extracted/displayed via:
+// Configs (incl. extended from plugins) may be extracted/displayed via:
 // `./node_modules/.bin/eslint --print-config eslint.config.mjs > "./.eslintrc.js_fullsettings.js"`
 export default [
   {languageOptions: { globals: globals.browser }},
@@ -23,7 +23,7 @@ export default [
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     rules: {
       semi: "error",
-      "prefer-const": "error",
+      "prefer-const": "warn",
     },
   },
   {ignores: ["node_modules/**/*.{js,mjs,cjs,ts,jsx,tsx}",
